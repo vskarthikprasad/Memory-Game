@@ -17,6 +17,14 @@ public class ModeOptionActivity extends AppCompatActivity {
         i1=(ImageView)findViewById(R.id.one);
         i2=(ImageView)findViewById(R.id.two);
         i3=(ImageView)findViewById(R.id.back);
+        i1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i =new Intent(ModeOptionActivity.this,onep.class);
+                startActivity(i);
+                ModeOptionActivity.this.finish();
+            }
+        });
         i2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
